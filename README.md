@@ -1,51 +1,60 @@
-Premier League Stats
+# 🏆 Premier League Stats
 
-Um dashboard em Angular 20 que consome a Football API para mostrar a tabela de classificação da Premier League e os próximos jogos. Ideal para portfólio, estudos e demonstração de habilidades em front-end.
+**Premier League Stats** é um projeto de estudo desenvolvido em **Angular 20**, que consome dados da **Football API** para exibir a tabela de classificação e os próximos jogos da Premier League. O objetivo é praticar consumo de API, organização de arquitetura front-end e criação de interfaces responsivas.
 
-🚀 Visão geral
+---
 
-Premier League Stats é um projeto de estudo que busca:
+## 📌 Visão Geral
 
-Consumir dados da Football API (standings, fixtures, times, etc.)
+Este projeto tem como foco:
 
-Exibir tabela de classificação da Premier League
+- Exibir a **tabela de classificação** da Premier League  
+- Mostrar os **próximos jogos** da competição  
+- Trabalhar com **Angular 20**, **HttpClient**, **Signals / RxJS**  
+- Criar um dashboard moderno, rápido e acessível  
+- Servir como projeto de estudo e portfólio para LinkedIn e GitHub
 
-Mostrar próximos jogos / calendário
+---
 
-Fornecer filtros por time, rodada e pesquisa rápida
+## 🧰 Tecnologias Utilizadas
 
-Ser responsivo e acessível
+- **Angular 20**
+- **TypeScript**
+- **RxJS** ou **Angular Signals** (a definir)
+- **Angular Router**
+- **HttpClient**
+- **Tailwind CSS** ou **Angular Material** (a definir)
+- **Football API**
+- **Jest** (opcional)
+- **GitHub Actions** (opcional)
 
-🧰 Tecnologias
+---
 
-Angular 20
+## 📊 Funcionalidades (Planejadas)
 
-TypeScript
+- ✔️ Página de **Tabela de Classificação**
+- ✔️ Página de **Próximos Jogos**
+- 🔜 Página **Detalhes do Time**
+- 🔜 Busca por time
+- 🔜 Filtros por rodada/data
+- 🔜 Tema claro/escuro
+- 🔜 Exportar dados (CSV)
 
-RxJS / Signals (você define a abordagem; recomendo Signals para estado simples ou RxJS para streams avançados)
+---
 
-Angular Router
-
-HttpClient (para comunicação com a Football API)
-
-Tailwind CSS ou Angular Material (escolha de UI)
-
-Jest / Karma + Jasmine (testes) — recomendo Jest para velocidade
-
-GitHub Actions (CI básico para lint/test/build)
-
-✅ Features planejadas
-
-Página inicial com resumo (posições, próximos jogos, destaque de última rodada)
-
-Página de Tabela com classificação completa (ordenável)
-
-Página Próximos jogos filtrável por time e data
-
-Página Time (detalhes, elenco, próximos jogos)
-
-Busca rápida por time
-
-Tema claro/escuro (opcional)
-
-Export CSV / compartilhar link de time (opcional)
+## 📁 Estrutura Sugerida do Projeto
+    src/
+    ├── app/
+    │ ├── core/
+    │ │ ├── services/
+    │ │ └── models/
+    │ ├── features/
+    │ │ ├── standings/
+    │ │ ├── fixtures/
+    │ │ └── team/
+    │ ├── shared/
+    │ ├── app-routing.module.ts
+    │ └── app.component.ts
+    └── environments/
+    ├── environment.ts
+    └── environment.prod.ts
