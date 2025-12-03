@@ -1,59 +1,51 @@
-# PremierLeagueStats
+Premier League Stats
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+Um dashboard em Angular 20 que consome a Football API para mostrar a tabela de classificação da Premier League e os próximos jogos. Ideal para portfólio, estudos e demonstração de habilidades em front-end.
 
-## Development server
+🚀 Visão geral
 
-To start a local development server, run:
+Premier League Stats é um projeto de estudo que busca:
 
-```bash
-ng serve
-```
+Consumir dados da Football API (standings, fixtures, times, etc.)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Exibir tabela de classificação da Premier League
 
-## Code scaffolding
+Mostrar próximos jogos / calendário
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Fornecer filtros por time, rodada e pesquisa rápida
 
-```bash
-ng generate component component-name
-```
+Ser responsivo e acessível
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🧰 Tecnologias
 
-```bash
-ng generate --help
-```
+Angular 20
 
-## Building
+TypeScript
 
-To build the project run:
+RxJS / Signals (você define a abordagem; recomendo Signals para estado simples ou RxJS para streams avançados)
 
-```bash
-ng build
-```
+Angular Router
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+HttpClient (para comunicação com a Football API)
 
-## Running unit tests
+Tailwind CSS ou Angular Material (escolha de UI)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Jest / Karma + Jasmine (testes) — recomendo Jest para velocidade
 
-```bash
-ng test
-```
+GitHub Actions (CI básico para lint/test/build)
 
-## Running end-to-end tests
+✅ Features planejadas
 
-For end-to-end (e2e) testing, run:
+Página inicial com resumo (posições, próximos jogos, destaque de última rodada)
 
-```bash
-ng e2e
-```
+Página de Tabela com classificação completa (ordenável)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Página Próximos jogos filtrável por time e data
 
-## Additional Resources
+Página Time (detalhes, elenco, próximos jogos)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Busca rápida por time
+
+Tema claro/escuro (opcional)
+
+Export CSV / compartilhar link de time (opcional)
